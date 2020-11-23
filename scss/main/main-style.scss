@@ -1,0 +1,83 @@
+.bg-section{
+    padding-bottom: $size-01;
+    background-color: $color-02;
+    padding-top: $size-01;
+    @include hover-effect(all, 0.1s, linear, 0.2s);
+            &:hover{
+                background-color: $color-07;}
+    .container{
+        @extend %size;
+        @include d-flex (flex, space-around, center);
+        .left-block{
+            width: $size-02;
+            height: $size-02;
+            background-color: $color-01;
+            @include animation-style(myanimation, 5s, infinite linear);
+            @media screen and(max-width: 1025px) {
+                background-color: blueviolet;
+                
+            }
+            @media screen and(max-width: 500px){
+                width: $size-04;
+                height: $size-04;
+            }
+        }
+        .right-block{
+            width: $size-02;
+            height: $size-02;
+            background-color: $color-03;
+            @include animation-style(myanimation, 5s, infinite linear);
+            @media screen and(max-width: 500px){
+                width: $size-04;
+                height: $size-04;
+            }
+        }
+    }
+}
+.bg-sectionN2{
+    padding-bottom: $size-01;
+    background-color: $color-04;
+    padding-top: $size-01;  
+    @include hover-effect(all, 0.1s, linear, 0.2s);
+            &:hover{
+                background-color: $color-06;
+            }
+    .wraper{
+        &:hover{
+            @include d-flex (flex, space-between, center);
+        }
+        @include d-flex(flex, center, center);
+        @media screen and(max-width: 1025px) {
+            @include d-flex (flex, space-around, center);
+            
+        }
+    
+        .left-block{
+            @include border-style(2px, solid, black);
+            @include animation-style(myanimation, 5s, infinite linear);
+            width: $size-02;
+            height: $size-02;
+            background-color: $color-01;
+            @media screen and(max-width: 500px){
+                width: $size-04;
+                height: $size-04;
+            }
+        }
+        .right-block{
+            width: $size-02;
+            height: $size-02;
+            background-color: $color-03;
+            @media screen and(max-width: 500px){
+                width: $size-04;
+                height: $size-04;
+            }
+            @include animation-style(myanimation, 5s, infinite linear);
+            @include hover-effect(all, 0.1s, linear, 0.2s);
+            &:hover{
+                background-color: $color-05;
+                width: $size-03;
+                height: $size-03;
+            }
+        }
+    }
+}
