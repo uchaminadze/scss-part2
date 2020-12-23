@@ -44,7 +44,7 @@
             }
     .wraper{
         &:hover{
-            @include d-flex (flex, space-between, center);
+            @include d-flex (flex, space-around, center);
         }
         @include d-flex(flex, center, center);
         @media screen and(max-width: 1025px) {
